@@ -2,7 +2,7 @@
 
 from urllib.request import urlopen
 
-data = urlopen('https://raw.githubusercontent.com/MarynaLongnickel/AdventOfcode2023/main/Day1/day1.txt').read().decode().split('\n')
+data = urlopen('https://raw.githubusercontent.com/MarynaLongnickel/AdventOfcode2023/main/Day1/day1.txt').read().decode().split('\n')[:-1]
 
 def day1(l):
     ans = 0
