@@ -25,7 +25,6 @@ def day1(l):
                         d.append(m[n])
                     found = True
                     break
-                # print(s, s[:len(n)], n, d)
             if not found:
                 s = s[1:]
         ans += int(d[0] + d[-1])
