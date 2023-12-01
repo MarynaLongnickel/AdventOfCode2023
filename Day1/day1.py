@@ -15,8 +15,6 @@ def day1(l):
         while len(s) > 0:
             for n in l:
                 found = False
-                if len(s) == 0:
-                    break
                 if s[:len(n)] == n:
                     if len(n) == 1:
                         s = s[len(n):]
