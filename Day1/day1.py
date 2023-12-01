@@ -3,9 +3,11 @@
 from urllib.request import urlopen
 
 data = urlopen('https://raw.githubusercontent.com/MarynaLongnickel/AdventOfcode2023/main/Day1/day1.txt').read().decode().split('\n')[:-1]
+m = {'one': '1', 'two': '2', 'three': '3', 'four': '4', 'five': '5', 'six': '6', 'seven': '7', 'eight': '8', 'nine': '9'}
 
 def day1(l):
     ans = 0
+    found = False
 
     for s in s2:
         d = []
