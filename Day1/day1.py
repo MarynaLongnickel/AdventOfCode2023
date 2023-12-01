@@ -9,7 +9,7 @@ def day1(l):
     ans = 0
     found = False
 
-    for s in s2:
+    for s in data:
         d = []
         while len(s) > 0:
             if len(s) == 0:
