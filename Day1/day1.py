@@ -13,8 +13,6 @@ def day1(l):
     for s in data:
         d = []
         while len(s) > 0:
-            if len(s) == 0:
-                break
             for n in l:
                 found = False
                 if len(s) == 0:
