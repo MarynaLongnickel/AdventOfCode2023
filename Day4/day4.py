@@ -9,9 +9,11 @@ nums = [re.findall(r'\d+', c) for card in cards for c in card]
 points = [len(list(set(nums[i]).intersection(set(nums[i+1])))) for i in range(0, len(nums) - 1, 2)]
       
 # ---------------------- PART 1 ------------------------
+
 sum([2**(x-1) if x > 0 else 0 for x in points])
 
 # ---------------------- PART 2 ------------------------
+
 ans = [1] * len(cards)
 
 for i in range(len(ans)):
